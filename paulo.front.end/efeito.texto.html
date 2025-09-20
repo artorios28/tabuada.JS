@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scalet=1.0>"
+<title>Usando efeitos com letras</title>
+        <style>
+           
+.txt-destaque{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+}
+.txt-destaque h1{
+    color: rgba(3, 3, 29, 0.555);
+    text-shadow: 2px 2px 2px rgba(
+        0, 0,0, 0.3);
+        transition:all 0.3s ease;
+        font-size: 50px;
+}
+   .txt-destaque h1:nth-child(odd):hover{
+transform: scale(2.0) translate(-10px);
+color: #885c9c;
+   }
+   .txt-destaque h1:nth-child(even):hover{
+    transform: scale(2.0); translate: (10px);
+    color: #1d67d1;
+   }
+ </style>
+    </head>
+    <body>
+<h2>Exemplo de Efeito de texto com letras separadas</h2>
+<p>Passe o mouse sobre as letras para ver o efeito</p>
+<div class = "txt-destaque">
+    <h1>J</h1>
+    <h1>E</h1>
+    <h1>S</h1>
+    <h1>U</h1>
+    <h1>S</h1>
+</div>  
+    </body>
+</html>
